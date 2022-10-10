@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	position: 0;
+	box-sizing: border-box;
+	font-family: Oswald;
+}
+
+body{
+	background: #ef418745;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.wrapper{
+	padding:30px 25px;
+	background: #fff;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.card{
+	transition: 0.5s all ease;
+}
+
+.card_info{
+	display: block;
+	margin-bottom: 10px;
+}
+.card_info h2{
+	letter-spacing: 1.2px;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+.card_info #txturl{
+	padding:8px 15px;
+	border:1px solid lightgray;
+	background: none;
+	outline: none;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom:10px;
+	letter-spacing: 1.2px;
+	font-size: 17px;
+	font-weight: 500;
+}
+.qr_btn{
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	background-color: #000;
+	color:#fff;
+	padding:8px 15px;
+	font-size: 17px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	margin-bottom:10px;
+}
+.qr_btn:hover{
+	background: #404040;
+
+}
+
+
+.divider{
+	display: block;
+	padding:0px 8px;
+	position: relative;
+}
+
+.divider:before{
+	content: "";
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left:0;
+	height: 1px;
+	background: gray;
+
+}
+.divider:after{
+	content: "";
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	right:0;
+	height: 1px;
+	background: gray;
+
+}
+
+
+.card_qr_sec{
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	margin-top:20px;
+	display: none;
+	
+	
+}
+.card_qr_sec h4{
+	padding:5px;
+	display: block;
+	color:#fff;
+	background: #000;
+	font-weight: 400;
+	font-style: 20px;
+	letter-spacing: 1.5px;
+	
+
+}
+.active{
+	display: block;
+}
+.active2{
+	display: block;
+}
+.card_qr_sec img{
+	max-width: 200px;
+	max-height: 200px;
+	padding:15px 0px;
+}
+
+.erro{
+	padding:15px 25px;
+	background: darkred;
+	border:none;
+	border-radius: 3px;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+/*
+
+
+
+	if (txturlvalue == "") {
+
+		qr_sec.classList.add('active');
+		qr_sec.innerHTML = `<p class="erro">Ops Please Input Any Data Then Submit !</P>`
+		
+
+	}else{
+
+		qr_btn.value = "Qr Code Is Generating.....";
+
+		let imgsrc =`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${txturlvalue}`;
+
+
+
+		qr_sec.innerHTML = 
+
+		`
+					<div>
+						<h4 id="valueName">${txturlvalue}</h4>
+						<img id="qr_img" src=${imgsrc}>	
+					</div>
+							
+
+
+		`
+		
+		imgsrc.addEventListener('load', ()=>{
+
+		qr_btn.value = "Generate Code";
+		qr_sec.classList.add('active');
+
+
+		})*/
